@@ -1,11 +1,14 @@
 [alias]
-	c = commit -am
-	fpush = push --force
+	c = commit -m
+        #fpush = push --force
 	s = status
+        ss = status --short
 	sclone = clone --depth=1
 	amend = commit --amend --all
 	hreset = reset --hard
 	co = checkout
+	ch = checkout
+	ck = checkout
 	df = diff --color --color-words --abbrev
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 
@@ -20,8 +23,8 @@
 
 [pager]
 	# insanely beautiful diffs ==> npm install -g diff-so-fancy
-	diff = diff-so-fancy | less --tabs=4 -RFX
-	show = diff-so-fancy | less --tabs=4 -RFX
+        diff = diff-so-fancy | less --tabs=2 -RFX
+	show = diff-so-fancy | less --tabs=2 -RFX
 
 [interactive]
   # disabled until github.com/so-fancy/diff-so-fancy/pull/172 is resolved :(

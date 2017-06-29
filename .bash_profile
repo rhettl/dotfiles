@@ -8,9 +8,9 @@ done
 unset file
 
 # to help sublimelinter etc with finding my PATHS
-case $- in
-   *i*) source ~/.extra
-esac
+#case $- in
+#   *i*) source ~/.extra
+#esac
 
 # generic colouriser
 GRC=`which grc`
