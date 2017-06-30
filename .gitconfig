@@ -69,6 +69,9 @@
   contributors = shortlog --summary --numbered
   contrib = contributors
 
+  # Remove files marked as deleted (usually due to moving the file)
+  rmcached = "ls-files --deleted -z | xargs -0 git rm --cached"
+
   # Merge GitHub pull request on top of the current branch or,
   # if a branch name is specified, on top of the specified branch
   mpr = "!f() { \
@@ -120,6 +123,9 @@
   # https://help.github.com/articles/signing-commits-using-gpg/
   gpgsign = true
   signingkey = C5C66895
+
+[gpg]
+  program = /usr/local/bin/gpg
 
 # so much color
 [color]
