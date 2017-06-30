@@ -1,3 +1,5 @@
+# JetBrains IDE meta files
+.idea
 
 # working files
 .vim/viminfo
