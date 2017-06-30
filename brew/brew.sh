@@ -37,7 +37,7 @@ brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
 # z hopping around folders
-brew install z
+#brew install z
 
 # run this script when this file changes guy.
 brew install entr
@@ -56,8 +56,8 @@ brew install mtr
 
 
 # Install other useful binaries
-brew install the_silver_searcher
-brew install fzf
+#brew install the_silver_searcher
+#brew install fzf
 
 brew install git
 brew install imagemagick --with-webp
@@ -76,7 +76,7 @@ brew install pidcat   # colored logcat guy
 
 brew install ncdu # find where your diskspace went
 
-brew install zsh
+#brew install zsh
 
 # Remove outdated versions from the cellar
 brew cleanup

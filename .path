@@ -4,7 +4,7 @@ syspath=$PATH
 
       PATH=/opt/local/bin:/opt/local/sbin
 PATH=$PATH:~/.homebrew/bin
-PATH=$PATH:~/dotfiles/bin
+PATH=$PATH:~/bin
 PATH=$PATH:~/code/git-friendly
 PATH=$PATH:$syspath
 
