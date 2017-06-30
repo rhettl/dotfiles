@@ -27,6 +27,7 @@ brew cask install imageoptim
 brew cask install mongodb
 brew cask install postgres
 brew cask install docker
+brew cask install keybase
 
 # fun
 brew cask install limechat           # IRC
