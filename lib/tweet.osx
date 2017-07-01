@@ -34,10 +34,3 @@ defaults write com.twitter.twitter-mac HideInBackground -bool true
 defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
 
 
-###############################################################################
-# Kill affected applications                                                  #
-###############################################################################
-
-for app in "Tweetbot" "Twitter"; do
-killall "${app}" &> /dev/null
-done

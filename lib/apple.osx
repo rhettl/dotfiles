@@ -24,12 +24,12 @@ defaults write com.apple.ActivityMonitor IconType -int 5
 defaults write com.apple.ActivityMonitor ShowCategory -int 0
 
 # Sets columns for all tabs
-defaults read com.apple.ActivityMonitor "UserColumnsPerTab v5.0" -dict \
-    '0' '( Command, CPUUsage, CPUTime, Threads, PID, UID, Ports )' \
-    '1' '( Command, ResidentSize, Threads, Ports, PID, UID,  )' \
-    '2' '( Command, PowerScore, 12HRPower, AppSleep, UID, powerAssertion )' \
-    '3' '( Command, bytesWritten, bytesRead, Architecture, PID, UID, CPUUsage )' \
-    '4' '( Command, txBytes, rxBytes, PID, UID, txPackets, rxPackets, CPUUsage )'
+#defaults read com.apple.ActivityMonitor "UserColumnsPerTab v5.0" -dict \
+#    '0' '( Command, CPUUsage, CPUTime, Threads, PID, UID, Ports )' \
+#    '1' '( Command, ResidentSize, Threads, Ports, PID, UID,  )' \
+#    '2' '( Command, PowerScore, 12HRPower, AppSleep, UID, powerAssertion )' \
+#    '3' '( Command, bytesWritten, bytesRead, Architecture, PID, UID, CPUUsage )' \
+#    '4' '( Command, txBytes, rxBytes, PID, UID, txPackets, rxPackets, CPUUsage )'
 
 # Set sort column
 defaults write com.apple.ActivityMonitor UserColumnSortPerTab -dict \
@@ -89,15 +89,3 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
-
-
-###############################################################################
-# Kill affected applications                                                  #
-###############################################################################
-
-for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-"Dock" "Finder" "Mail" "Messages" \
-"Opera" "Photos" "Safari" "SizeUp" "SystemUIServer" "Terminal" "iCal"; do
-killall "${app}" &> /dev/null
-done
-echo "Done. Note that some of these changes require a logout/restart to take effect."
