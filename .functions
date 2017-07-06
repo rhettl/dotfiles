@@ -199,7 +199,17 @@ shellswitch () {
 	chsh -s $(brew --prefix)/bin/$1
 }
 
+# Get disk at which a volume is mounted
+function disk () {
+  diskutil list | grep "$1" | sed -E 's/^.* (disk[0-9]+).*$/\1/'
+}
 
+# Eject a disk be volume name or all partitions on said disk
+function eject () {
+  ejdisk=`disk "$1"`
+  diskutil unmount /dev/"$ejdisk" 2> /dev/null ||
+  diskutil unmountDisk /dev/"$ejdisk"
+}
 
 # `o` with no arguments opens the current directory, otherwise opens the given
 # location
