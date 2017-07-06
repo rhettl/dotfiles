@@ -11,8 +11,9 @@ function doIt() {
 		--exclude "lib/" \
 		--exclude "docs/" \
 		--exclude ".DS_Store" \
-		--exclude ".osx" \
 		--exclude ".ssh.config.example" \
+		--exclude ".osx" \
+		--exclude ".idea/" \
 		--exclude ".gitconfig.local.example" \
 		--exclude "README.md" \
 		--exclude "update-sync.sh" \

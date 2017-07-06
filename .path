@@ -5,6 +5,8 @@ syspath=$PATH
       PATH=/opt/local/bin:/opt/local/sbin
 PATH=$PATH:~/.homebrew/bin
 PATH=$PATH:~/bin
+PATH=$PATH:~/Library/Python/3.4/bin
+PATH=$PATH:~/Library/Python/2.7/bin
 PATH=$PATH:~/code/git-friendly
 PATH=$PATH:$syspath
 

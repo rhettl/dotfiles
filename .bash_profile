@@ -39,7 +39,7 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 
 # Enable history expansion with space
 # E.g. typing !!<space> will replace the !! with your last command
-bind Space:magic-space
+#bind Space:magic-space
 
 # Use standard ISO 8601 timestamp
 # %F equivalent to %Y-%m-%d
